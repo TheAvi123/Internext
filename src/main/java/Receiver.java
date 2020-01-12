@@ -1,4 +1,9 @@
+import com.twilio.twiml.MessagingResponse;
+import com.twilio.twiml.messaging.Body;
+import com.twilio.twiml.messaging.Message;
+
 import static spark.Spark.get;
+import static spark.Spark.post;
 
 public class Receiver {
 
@@ -8,7 +13,7 @@ public class Receiver {
 
     public void respond() {
         get("/", (req, res) -> "Hello Web");
-/*
+
         post("/sms", (req, res) -> {
             res.type("application/xml");
             Body body = new Body
@@ -24,6 +29,6 @@ public class Receiver {
                     .build();
             return twiml.toXml();
         });
-*/
+
     }
 }

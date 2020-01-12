@@ -1,5 +1,3 @@
-import static spark.Spark.get;
-
 public class Internext {
 
     //static HTMLSource source;
@@ -7,8 +5,8 @@ public class Internext {
 
     public static void main(String[] args) {
 
-        get("/hello", (req, res) -> "Hello World");
-        //Receiver tester = new Receiver();
+        //get("/hello", (req, res) -> "Hello World");
+        Receiver tester = new Receiver();
         //Sender tester = new Sender();
 /*
         source = new HTMLSource();
